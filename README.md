@@ -78,7 +78,6 @@ Weather or Not is an app who's go is to alert you about the weather. The goal wo
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decide what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Functionality is up to date.
 - Allow a responsive design for interface to change with weather.
@@ -86,7 +85,6 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
 - Add second API
 - Add local sports or events if any.
