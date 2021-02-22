@@ -80,15 +80,17 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Functionality is up to date.
+- Allow a responsive design for interface to change with weather.
+- Allow the user to have a different choice of days forecast. 
+
 
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
 
 - Add second API
-- Use local storage to save user favorites
+- Add local sports or events if any.
+- Provide suggestions of warmer or colder weather.
 
 ## Project Schedule
 
@@ -100,10 +102,12 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Feb 22-23| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |Feb 23| Project Approval | Incomplete
+|Feb 23| HTML, Pseudcode | Incomplete
 |Feb 24| Pseudocode / actual code | Incomplete
 |Feb 25| Initial Clickable Model  | Incomplete
 |Feb 25| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Feb 26| MVP | Incomplete
+|Feb 25-26| MVP | Incomplete
+|Feb 26| CSS | Incomplete
 |March 1| Presentations | Incomplete
 
 ## Priority Matrix
@@ -117,10 +121,10 @@ Tell us how long you anticipate spending on each area of development. Be sure to
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| --- | :---: |  :---: | :---: | :---: 	|
+| Adding Form | H 	| 5hrs| 	|3.5hrs|	| -hrs |
+| Working with API | H |5hrs		| 2.5hrs|	| -hrs |
+| Total | H | 		|6hrs|		| 5hrs |	| -hrs |
 
 ## Code Snippet
 
