@@ -12,7 +12,7 @@ Weather or Not is an app who's go is to alert you about the weather. The goal wo
 [Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.]
 
 ## API and Data Sample
-
+```
 {
     "location": {
         "name": "Atwater",
@@ -68,6 +68,7 @@ Weather or Not is an app who's go is to alert you about the weather. The goal wo
                         },
                         "feelslike_f": 46.0
                     },
+		    ```
 
 ## Wireframes
 
@@ -122,9 +123,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: 	|
-| Adding Form | H 	| 5hrs| 	|3.5hrs|	| -hrs |
-| Working with API | H |5hrs		| 2.5hrs|	| -hrs |
-| Total | H | 		|6hrs|		| 5hrs |	| -hrs |
+| Adding Form | H 	| 5hrs| |3.5hrs|| -hrs |
+| Working with API | H |5hrs| 2.5hrs| -hrs |
+| Total | H | |6hrs| 5hrs | -hrs |
 
 ## Code Snippet
 
