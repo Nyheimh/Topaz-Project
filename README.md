@@ -12,7 +12,7 @@ Weather or Not is an app who's go is to alert you about the weather. The goal wo
 [Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.]
 
 ## API and Data Sample
-`
+```
 {
     "location": {
         "name": "Atwater",
@@ -68,7 +68,7 @@ Weather or Not is an app who's go is to alert you about the weather. The goal wo
                         },
                         "feelslike_f": 46.0
                     },
-		    `
+		    ```
 
 ## Wireframes
 
