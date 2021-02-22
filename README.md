@@ -135,7 +135,6 @@ Use this section to include a brief code snippet of functionality that you are p
 function reverse(string) {
 	// here is the code to reverse a string of text
 }
-```
 
 ## Change Log
  Use this section to document what changes were made and the reasoning behind those changes.  
