@@ -1,4 +1,4 @@
-# Topaz-Project
+# Weather-or-Not
 
 # Project Overview
 
@@ -8,7 +8,7 @@ https://www.weatherapi.com/api-explorer.aspx
 
 ## Project Description
 
-Weather or Not is an app who's go is to alert you about the weather. The goal would be to alert the user of the weather soon as they open the app. The goal is to prepare the user for conditions of their current or future location Weather or Not it is preferred.
+Weather or Not is a mobile that allows the user to receive the weather of the selected location.
 
 ## API and Data Sample
 ```
@@ -77,17 +77,14 @@ https://wireframe.cc/pro/pp/cb9ad0cd3417130
 
 #### MVP 
 
-- Functionality is up to date, with an advanced function.
-- Allow the user to have a different choice of days forecast. 
-- Develop a CSS design that allows a smooth flow.
+- Allow for Weather API to determine weather of city by using the city name or zip code.
+- Create a responsive design to allow the user to receive the updated weather in specified area up to 3 days.
 
 
 #### PostMVP  
 
-- Add second API
-- Add local sports or events if any.
-- Provide suggestions of warmer or colder weather.
-- Allow a responsive design for interface to change with weather.
+- Add second API (Add local sports or events if any)
+- Update background to correspond with local weather.
 
 ## Project Schedule
 
@@ -101,10 +98,10 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Feb 23| Project Approval | Incomplete
 |Feb 23| HTML, Pseudcode | Incomplete
 |Feb 24| Pseudocode / actual code | Incomplete
-|Feb 25| Initial Clickable Model  | Incomplete
 |Feb 25| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Feb 25-26| MVP | Incomplete
-|Feb 26| CSS | Incomplete
+|Feb 25| Initial Clickable Model  | Incomplete
+|Feb 25| MVP | Incomplete
+|Feb 26| CSS, finalization | Incomplete
 |March 1| Presentations | Incomplete
 
 ## Priority Matrix
@@ -113,17 +110,16 @@ https://wireframe.cc/pro/pp/d98c9f9f1417159
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: 	|
-| Working with API | H |5hrs| 0hr| 0hr|
-| CSS | M | 3hrs | 0hrs | 0hrs |
-| MVP | H | 3.5hrs | 0hr | 0hr |
-| HTML | H | 4hrs | 0hr | 0hr |
-| Total | H | 15.5hrs| 0hr | 0hr |
+| Working with API | H |7 hrs| 0hr| 0hr|
+| CSS | M | 4 hrs | 0hrs | 0hrs |
+| MVP | H | 5 hrs | 0hr | 0hr |
+| HTML | H | 3.5hrs | 0hr | 0hr |
+| Pseudocode | H | 5hrs | 0hr | 0hr |
+| Try Handling | H | 4hrs | 0hr | 0hr |
+| Testing | H | 4hrs | 0hr | 0hr |
+| Total | H | 32.5hrs| 0hr | 0hr |
 
 ## Code Snippet
 
