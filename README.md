@@ -8,7 +8,7 @@ https://www.weatherapi.com/api-explorer.aspx
 
 ## Project Description
 
-Weather or Not is an app who's go is to alert you about the weather. The goal would be to alert the user of the weather soon as they open the site. The goal is to prepare the user for conditions of their current or future location Weather or Not it is preferred.
+Weather or Not is an app who's go is to alert you about the weather. The goal would be to alert the user of the weather soon as they open the app. The goal is to prepare the user for conditions of their current or future location Weather or Not it is preferred.
 
 ## API and Data Sample
 ```
