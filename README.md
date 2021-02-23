@@ -111,11 +111,11 @@ https://wireframe.cc/pro/pp/d98c9f9f1417159
 | Working with API | H |7 hrs| 0hr| 0hr|
 | CSS | M | 4 hrs | 0hrs | 0hrs |
 | MVP | H | 5 hrs | 0hr | 0hr |
-| HTML | H | 3.5hrs | 0hr | 0hr |
+| HTML | H | 4hrs | 0hr | 0hr |
 | Pseudocode | H | 5hrs | 0hr | 0hr |
 | Try Handling | H | 4hrs | 0hr | 0hr |
 | Testing | H | 4hrs | 0hr | 0hr |
-| Total | H | 32.5hrs| 0hr | 0hr |
+| Total | H | 33hrs| 0hr | 0hr |
 
 ## Code Snippet
 
