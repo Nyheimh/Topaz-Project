@@ -78,7 +78,7 @@ https://wireframe.cc/pro/pp/cb9ad0cd3417130
 #### MVP 
 
 - Allow for Weather API to determine weather of city by using the city name or zip code.
-- Create a responsive design to allow the user to receive the updated weather in specified area up to 3 days.
+- Create a responsive design to allow the user to receive the weather in specified area up to 3 days, in addition to, the astro (sunrise, sunset, moonrise, moonset, and moon phase) for the current day.
 
 
 #### PostMVP  
@@ -87,10 +87,6 @@ https://wireframe.cc/pro/pp/cb9ad0cd3417130
 - Update background to correspond with local weather.
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
