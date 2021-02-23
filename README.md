@@ -120,7 +120,6 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: 	|
-| Adding Form | H | 5hrs| 3.5hrs| -hrs |
 | Working with API | H |5hrs| 2.5hrs| -hrs |
 | CSS | M | 3hrs | 0hrs | 0hrs |
 | MVP | H | 3hrs | 0hr | 0hr |
