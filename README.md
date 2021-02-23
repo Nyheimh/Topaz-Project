@@ -109,7 +109,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-https://wireframe.cc/pro/edit/417159
+https://wireframe.cc/pro/pp/d98c9f9f1417159
 
 ## Timeframes
 
