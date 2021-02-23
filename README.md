@@ -71,7 +71,7 @@ Weather or Not is an app who's go is to alert you about the weather. The goal wo
 ```
 ## Wireframes
 
-[Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.]
+https://wireframe.cc/pro/edit/417130
 
 ### MVP/PostMVP
 
@@ -79,8 +79,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP 
 
-- Functionality is up to date.
-- Allow a responsive design for interface to change with weather.
+- Functionality is up to date, with an advanced function.
 - Allow the user to have a different choice of days forecast. 
 
 
@@ -89,6 +88,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Add second API
 - Add local sports or events if any.
 - Provide suggestions of warmer or colder weather.
+- Allow a responsive design for interface to change with weather.
 
 ## Project Schedule
 
@@ -110,7 +110,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+https://wireframe.cc/pro/edit/417159
 
 ## Timeframes
 
@@ -120,7 +120,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: 	|
-| Adding Form | H | 5hrs| 3.5hrs|| -hrs |
+| Adding Form | H | 5hrs| 3.5hrs| -hrs |
 | Working with API | H |5hrs| 2.5hrs| -hrs |
 | CSS | M | 3hrs | 0hrs | 0hrs |
 | MVP | H | 3hrs | 0hr | 0hr |
