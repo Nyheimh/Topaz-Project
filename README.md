@@ -92,7 +92,7 @@ https://wireframe.cc/pro/pp/cb9ad0cd3417130
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Feb 22-23| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Feb 22-23| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Feb 23| Project Approval | Incomplete
 |Feb 23| HTML, Pseudcode, start CSS | Incomplete
 |Feb 24| Core Application Structure (HTML, CSS, etc.) | Incomplete
@@ -108,14 +108,17 @@ https://wireframe.cc/pro/pp/d98c9f9f1417159
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: 	|
-| Working with API | H |7 hrs| 0hr| 0hr|
-| CSS | M | 4 hrs | 0hrs | 0hrs |
-| MVP | H | 5 hrs | 0hr | 0hr |
-| HTML | H | 4hrs | 0hr | 0hr |
-| Pseudocode | H | 5hrs | 0hr | 0hr |
+| Pseudocode | H | 2 hrs | 0hr | 0hr |
+| HTML | H | 3 hrs | 0hr | 0hr |
+| Initial API call | H | 3 hrs| 0hr| 0hr|
+| Render API to page | H | 4 hrs | 0hr | 0hr |
+| Search button | M | 4 hrs | 0hrs | 0hrs |
+| Input section | M | 3.5 hrs | 0hrs | 0hrs |
+| Initial CSS | M | 4 hrs | 0hrs | 0hrs |
+| Complete MVP/Testing | H | 4 hrs | 0hr | 0hr |
 | Try Handling | H | 4hrs | 0hr | 0hr |
-| Testing | H | 4hrs | 0hr | 0hr |
-| Total | H | 33hrs| 0hr | 0hr |
+| Refine CSS/Responsive Design | M | 4 hrs | 0hrs | 0hrs |
+| Total | H | 35.5hrs| 0hr | 0hr |
 
 ## Code Snippet
 
