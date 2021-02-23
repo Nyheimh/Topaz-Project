@@ -119,11 +119,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: 	|
-| Working with API | H |5hrs| 2.5hrs| -hrs |
+| Working with API | H |5hrs| 0hr| 0hr|
 | CSS | M | 3hrs | 0hrs | 0hrs |
-| MVP | H | 3hrs | 0hr | 0hr |
-| HTML | H | 3hrs | 0hr | 0hr |
-| Total | H | 6hrs| 5hrs | -hrs |
+| MVP | H | 3.5hrs | 0hr | 0hr |
+| HTML | H | 4hrs | 0hr | 0hr |
+| Total | H | 15.5hrs| 0hr | 0hr |
 
 ## Code Snippet
 
