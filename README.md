@@ -75,12 +75,11 @@ https://wireframe.cc/pro/edit/417130
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decide what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
 
 - Functionality is up to date, with an advanced function.
 - Allow the user to have a different choice of days forecast. 
+- Develop a CSS design that allows a smooth flow.
 
 
 #### PostMVP  
