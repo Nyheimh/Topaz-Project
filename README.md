@@ -77,14 +77,16 @@ https://wireframe.cc/pro/pp/cb9ad0cd3417130
 
 #### MVP 
 
-- Allow for Weather API to determine weather of city by using the city name or zip code.
-- Create a responsive design to allow the user to receive the weather in specified area up to 3 days, in addition to, the astro (sunrise, sunset, moonrise, moonset, and moon phase) for the current day.
+- Allow for Weather API to render weather of city by using the city name or zip code.
+- Create a responsive design for two breakpoints. 
+- Allow the user to receive the weather in specified area up to 3 days, and the astro (sunrise, sunset, moonrise, moonset, and moon phase) for the current day.
 
 
 #### PostMVP  
 
-- Add second API (Add local sports or events if any)
 - Update background to correspond with local weather.
+- Add second API (Add local sports or events if any).
+- Saved locations. 
 
 ## Project Schedule
 
@@ -92,10 +94,8 @@ https://wireframe.cc/pro/pp/cb9ad0cd3417130
 |---|---| ---|
 |Feb 22-23| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |Feb 23| Project Approval | Incomplete
-|Feb 23| HTML, Pseudcode | Incomplete
-|Feb 24| Pseudocode / actual code | Incomplete
-|Feb 25| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Feb 25| Initial Clickable Model  | Incomplete
+|Feb 23| HTML, Pseudcode, start CSS | Incomplete
+|Feb 24| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Feb 25| MVP | Incomplete
 |Feb 26| CSS, finalization | Incomplete
 |March 1| Presentations | Incomplete
