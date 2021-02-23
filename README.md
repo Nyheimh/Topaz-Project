@@ -71,7 +71,7 @@ Weather or Not is an app who's go is to alert you about the weather. The goal wo
 ```
 ## Wireframes
 
-https://wireframe.cc/pro/edit/417130
+https://wireframe.cc/pro/pp/cb9ad0cd3417130
 
 ### MVP/PostMVP
 
