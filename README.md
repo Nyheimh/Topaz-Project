@@ -8,7 +8,7 @@ https://www.weatherapi.com/api-explorer.aspx
 
 ## Project Description
 
-Weather or Not is a mobile that allows the user to receive the weather of the selected location.
+Weather or Not is a mobile app that allows the user to receive the weather of the selected location whether current conditions or up to three days in advance.
 
 ## API and Data Sample
 ```
