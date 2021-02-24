@@ -93,8 +93,8 @@ https://wireframe.cc/pro/pp/cb9ad0cd3417130
 |  Day | Deliverable | Status
 |---|---| ---|
 |Feb 22-23| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|Feb 23| Project Approval | Incomplete
-|Feb 23| HTML, Pseudcode, start CSS | Incomplete
+|Feb 23| Project Approval | Complete
+|Feb 23| HTML, Pseudcode, start CSS | Complete
 |Feb 24| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Feb 25| MVP | Incomplete
 |Feb 26| CSS, finalization | Incomplete
