@@ -11,11 +11,7 @@ async function weather() {
     try {
       const response = await axios.get(url)
       // console.log(response)
-      // l15 = to l16
-      let current = response.data.current
-      const { temp_f } = current
-      // showWeather(current)
-      console.log(temp_f)
+      let data = response.data
       return response
     } catch (err) {
       console.error(err)
@@ -24,6 +20,8 @@ async function weather() {
 
 // weather()
 
+
+// event listener
 const searchBtn = document.querySelector('#search')
 
 searchBtn.addEventListener('click', (e) => {
@@ -36,7 +34,27 @@ searchBtn.addEventListener('click', (e) => {
   document.querySelector('#weather').value = ""
 })
 
-function showWeather(current) {
-  const weatherContainer = document.querySelector('.Weather-Info')
-  console.log(weatherContainer)
+// movie container
+
+function weatherList(data) {
+
+  const weatherContainer = document.querySelector('.weather-info')
+    // console.log(weatherContainer)
 }
+const weatherInfo = `
+  <div class="weatherCurrent">
+    <h1> Weather Current Temperature: ${data.current.temp_f} </h1>
+    <h2> Weather Condition: ${data.current.condition.text}
+
+
+  </div>
+  <div class="weatherAstro">
+    <h1> Astro </h1>
+    <h2> Sunrise: ${data.forecast.forecastday[0].astro.sunrise} </h2>
+    <h2> Sunset: ${data.forecast.forecastday[0].astro.sunset} </h2>
+    <h2> Moon Phase: ${data.forecast.forecastday[0].astro.moon_phase} </h2>
+    <h2> Moonrise: ${data.forecast.forecastday[0].astro.moonrise} </h2>
+    <h2> Moonset: ${data.forecast.forecastday[0].astro.moonset} </h2>
+
+  </div>
+`
