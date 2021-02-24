@@ -12,7 +12,8 @@ async function weather(value) {
   // console.log(url)
     // console.log(sun)
 
-    try {
+  try {
+      removeWeather()
       const response = await axios.get(url)
       // console.log(response)
       let data = response.data
@@ -58,6 +59,15 @@ const weatherInfo = `
 `
 weatherContainer.insertAdjacentHTML('beforeend', weatherInfo)
 }
+
+function removeWeather() {
+
+  const weatherContainer = document.querySelector('.weather-info')
+
+    while (weatherContainer.lastChild) {
+      weatherContainer.removeChild(weatherContainer.lastChild)
+    }
+  }
 
 
 
