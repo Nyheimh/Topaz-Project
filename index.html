@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -9,18 +10,18 @@
   <script defer src="./weather.js"></script>
   <title>Weather or Not</title>
 </head>
+<header class="banner">Weather or Not</header>
 <body>
-  <h1>Weather or Not</h1>
-  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.I25ih228hKmxWOnl9byr0gHaEL%26pid%3DApi&f=1" alt="animated weather">
-  <div class="explore">
-    <input type="text" id="weather" placeholder="Zip Code or City,State, Country">
+  <div class="searchbar">
+    <input type="text" id="weather" placeholder="Zip Code or City,State,Country">
     <button id="search"> Search </button>
+    
     </div>
     <section class="weather-info">
 
     </section>
 </body>
-<footer> &copy; Nyheim 2021
+<footer id="footer"> &copy; Nyheim 2021
 </footer>
 </html>
 
