@@ -69,15 +69,18 @@ function weatherList(data) {
 const weatherInfo = `
   <div class ="weatherDate">
     <p> Hello, the date is ${data.location.localtime}</p>
-
-    <div class ="weatherCurrent">
     <p> Location: ${data.location.name}, ${data.location.region} </p>
+
+    <div class ="weatherCurrent" id="box">
+    
     <p> Current Temperature: ${data.current.temp_f} </p>
     <p> Weather Condition: ${data.current.condition.text} </p>
+    <li> 1 Day Forecast: ${data.forecast.forecastday[0].day.maxtemp_f} </li>
+    <li> 2 Day Forecast: ${data.forecast.forecastday[1].day.maxtemp_f}</li>
     </div>
 
-  <div class ="astronomy">
-    <h1>
+  <div class ="astronomy" id="box">
+    <h1>Astronomy</h1>
     <p> Sunset: ${data.forecast.forecastday[0].astro.sunset} </p>
     <p> Sunrise: ${data.forecast.forecastday[0].astro.sunrise} </p>
     <p> Moon Phase: ${data.forecast.forecastday[0].astro.moon_phase} </p>
@@ -96,9 +99,4 @@ weatherContainer.insertAdjacentHTML('beforebegin', weatherInfo)
     while (weatherContainer.lastChild) {
       weatherContainer.removeChild(weatherContainer.lastChild)
     }
-  }
-
-  // <div class="weatherAstro">
-  //   <h1> Astronomy </h1>
-  //     <p> Sunset: ${data.forecast.forecastday[0].astro.sunset} </p>
-      
+  } 
