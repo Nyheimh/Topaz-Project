@@ -25,7 +25,21 @@ async function weather(value) {
     }
 }
 // weather()
+async function weather(value) {
+  const link = `${ASTRO_URL}${value}`
 
+  try {
+    removeWeather()
+  const response = await axios.get(link)
+  // console.log(response)
+  let dataStro = response.data.forecast.forecastday[0]
+    // weatherList(data)
+  console.log(dataStro)
+  return response
+} catch (err) {
+  console.error(err)
+}
+}
 
 // event listener
 const searchBtn = document.querySelector('#search')
@@ -52,17 +66,24 @@ function weatherList(data) {
 
 const weatherInfo = `
   <div class ="weatherCurrent">
-    <h1>Current Temperature: ${data.current.temp_f} </h1>
-    <h2> Weather Condition: ${data.current.condition.text} <h2>
+    <h1> Location: ${data.location.name} </h1>
+    <h2> Current Temperature: ${data.current.temp_f} </h2>
+    <h3> Weather Condition: ${data.current.condition.text} </h3>
+    <h3> ${data.current.condition.icon} </h3>
+    
+
+    Sunset: ${data.forecast.forecastday[0].astro.sunset}
 
   </div>
 `
 weatherContainer.insertAdjacentHTML('beforeend', weatherInfo)
 }
 
-function removeWeather() {
 
-  const weatherContainer = document.querySelector('.weather-info')
+  // remove previous data
+  function removeWeather() {
+
+    const weatherContainer = document.querySelector('.weather-info')
 
     while (weatherContainer.lastChild) {
       weatherContainer.removeChild(weatherContainer.lastChild)
@@ -70,13 +91,10 @@ function removeWeather() {
   }
 
 
-
-
-
 // </div>
 // <div class="weatherAstro">
 //   <h1> Astro </h1>
-//   <h2> 
+//   <h2> Sunset: ${data.forecast.forecastday[0].astro.sunset} </h2>
 //   <h2> Sunset: ${data.forecast.forecastday[0].astro.sunset} </h2>
 //   <h2> Moon Phase: ${forecast.forecastday[0].astro.moon_phase} </h2>
 //   <h2> Moonrise: ${data.forecast.forecastday[0].astro.moonrise} </h2>
