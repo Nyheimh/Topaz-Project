@@ -5,28 +5,24 @@ let DAY = 'current.json'
 const API_KEY = '7d7cc083fad74e5193a213303212302'
 let ASTRO_URL = `${DOMAIN}${ASTRO}?key=${API_KEY}&q=`;
 let FORECAST_URL = `${DOMAIN}${FORECAST}?key=${API_KEY}&q=`
-let BASE_URL = `${DOMAIN}${DAY}?key=${API_KEY}&q=`;
-
-
-
+let DAY_URL = `${DOMAIN}${DAY}?key=${API_KEY}&q=`;
 
 async function weather(value) {
-  // const url = `${DOMAIN}${TYPE}${API_KEY}`
-  const url = `${BASE_URL}${value}`
-  console.log(url)
+  const url = `${DAY_URL}${value}`
+  // console.log(url)
     // console.log(sun)
 
     try {
       const response = await axios.get(url)
-      console.log(response)
-      let data = response.data.current
-      console.log(data)
-      return data
+      // console.log(response)
+      let data = response.data
+        weatherList(data)
+      // console.log(data)
+      return response
     } catch (err) {
       console.error(err)
     }
 }
-
 // weather()
 
 
@@ -42,10 +38,11 @@ searchBtn.addEventListener('click', (e) => {
 
   document.querySelector('#weather').value = ""
 
+  
 })
 
 
-// movie container
+//  container
 
 function weatherList(data) {
 
@@ -53,21 +50,24 @@ function weatherList(data) {
     // console.log(weatherContainer)
 
 const weatherInfo = `
-  <div class=".weatherCurrent">
-    <h1> Weather Current Temperature: ${data.current.temp_f} </h1>
+  <div class ="weatherCurrent">
+    <h1>Current Temperature: ${data.current.temp_f} </h1>
     <h2> Weather Condition: ${data.current.condition.text} <h2>
-
-
-  </div>
-  <div class=".weatherAstro">
-    <h1> Astro </h1>
-    <h2> Sunrise: ${data.forecast.forecastday[0].astro.sunrise} </h2>
-    <h2> Sunset: ${data.forecast.forecastday[0].astro.sunset} </h2>
-    <h2> Moon Phase: ${forecast.forecastday[0].astro.moon_phase} </h2>
-    <h2> Moonrise: ${data.forecast.forecastday[0].astro.moonrise} </h2>
-    <h2> Moonset: ${data.forecast.forecastday[0].astro.moonset} </h2>
 
   </div>
 `
-// weatherContainer.insertAdjacentHTML('beforeend, weatherInfo')
+weatherContainer.insertAdjacentHTML('beforeend', weatherInfo)
 }
+
+
+
+
+
+// </div>
+// <div class="weatherAstro">
+//   <h1> Astro </h1>
+//   <h2> 
+//   <h2> Sunset: ${data.forecast.forecastday[0].astro.sunset} </h2>
+//   <h2> Moon Phase: ${forecast.forecastday[0].astro.moon_phase} </h2>
+//   <h2> Moonrise: ${data.forecast.forecastday[0].astro.moonrise} </h2>
+//   <h2> Moonset: ${data.forecast.forecastday[0].astro.moonset} </h2>
