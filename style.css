@@ -44,17 +44,29 @@ border: 2px solid;
 max-width: 100%;
 font-size: 1.5em;
 }
-
+/* box adjustment for current weather */
 .weatherCurrent {
   border: gold 3px solid;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px; 
   background-color: brown;
   padding: 10px;
-  margin: 0;
-  /* margin: 20px; */
+  /* margin: 0;   */
+  /* right: 0; */
+  bottom: 0;   
+  margin: 300px;
 }
 
+.astronomy {
+  border: brown 3px solid;
+  height: 300px;
+  width: 300px; 
+  background-color: gold;
+  padding: 10px;
+  
+  /* bottom: 0;    */
+  /* margin: px; */
+}
 
 #footer {
   position: fixed;
