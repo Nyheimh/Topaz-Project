@@ -2,15 +2,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-image: url(https://images.unsplash.com/photo-1523203806015-5e0eee90e49b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c3VubnklMjBkYXklMjBpbiUyMG1vdW50YWluc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-image: url(https://images.unsplash.com/photo-1533668637662-07c3eb8407b9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1237&q=80);
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
   /* background-color: gray; */
   background-blend-mode: luminosity;
   color: rgba(0, 0, 0, 0.619);
-  /* text-align: center; */
-  /* background-position: center; */
   border: 2px solid;
   /* max-width: 100%; */
   font-size: 1.5em;
@@ -33,7 +31,7 @@ h1 {
   justify-content: center;
   font-size: 30px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: aliceblue;
+  color: black;
   border: aliceblue 2px solid;
 }
 
@@ -51,11 +49,8 @@ h1 {
   height: 40px;
   border-radius: 40px;
   padding: 10px;
-  /* border: 3px solid #32e17c; */
-  /* position: absolute; */
   top: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
   background: white;
 }
 
@@ -84,8 +79,7 @@ h1 {
 .weatherDate {
   display: flex;
   justify-content: center;
-  color: white;
-  /* align-content: center; */
+  color: black;
 }
 
 .box-container{
@@ -96,47 +90,64 @@ h1 {
 
 .current {
   justify-content: center;
-  border: gold 3px solid;
+  /* border: gold 3px solid; */
   width: 400px;
   height: 400px;
+  background-color: black;
+  opacity: 0.6;
+  color: white;
   /* color: white; */
 }
 
 .astronomy {
-  text-align: center;
-  border: brown 3px solid;
+  justify-content: center;
+  /* text-align: center; */
+  /* border: brown 3px solid; */
   width: 400px;
   height: 400px;
-  /* color: white; */
+  background-color: black;
+  opacity: 0.6;
+  color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   body {
-    background-image: url(https://images.unsplash.com/photo-1587993202407-88b4156fe89f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60)
+    background-image: url(https://images.unsplash.com/photo-1576090099020-44d900b762ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80)
+    
   }
   .current {
     justify-content: center;
-    border: gold 3px solid;
+    border: white 3px solid;
     width: 400px;
     height:500px;
-    color: white;
+    color: black;
+    background-color: gray;
+    opacity: 0.6;
   }
-  
+
   .astronomy {
     text-align: center;
-    border: brown 3px solid;
+    border:white 3px solid;
     width: 400px;
     height: 500px;
-    color: white;
+    color: black;
+    background-color: gray;
+    opacity: 0.6;
   }
   #footer {
     position: fixed;
     width: 100%;
+    border: chartreuse 5px solid;
+    text-align: center;
+    /* left: 0; */
+    /* bottom: 0; */
+    color: black;
   }
-  }
+}
 
 #footer {
-  display: flex;
+  /* display: flex; */
+  margin-top: 15px;
   position: fixed;
   text-align: center;
   left: 0;
