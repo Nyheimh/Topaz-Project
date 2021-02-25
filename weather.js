@@ -72,8 +72,8 @@ const weatherInfo = `
     <p> Hello, the date is ${data.location.localtime}</p>
     <p> Location: ${data.location.name}, ${data.location.region} </p>
 
-    <div class ="current" id="box">
     
+  <div class="current" id="box">  
     <p> Current Temperature: ${data.current.temp_f} </p>
     <p> Weather Condition: ${data.current.condition.text} </p>
     
@@ -82,7 +82,7 @@ const weatherInfo = `
     <li> Day 3 Forecast: ${data.forecast.forecastday[2].day.avgtemp_f}</li>
     </div>
 
-  <div class ="astronomy" id="box">
+  <div class="astronomy" id="box">
     <p> Sunset: ${data.forecast.forecastday[0].astro.sunset} </p>
     <p> Sunrise: ${data.forecast.forecastday[0].astro.sunrise} </p>
     <p> Moon Phase: ${data.forecast.forecastday[0].astro.moon_phase} </p>

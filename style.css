@@ -48,40 +48,26 @@ font-size: 1.5em;
 }
 
 #box {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column wrap ;
-  border: lime 4px solid;
-  width: 100%;
+  display: grid;
+
+  /* justify-content: space-evenly;
+  flex-direction: column; */
+  /* border: lime 4px solid;
+  grid-template-columns: 4fr 4fr 4fr 4fr; */
+  /* width: 100%;
+  flex: 1; */
 }
 
 .current {
   border: gold 3px solid;
-  /* flex-direction: column; */
-  /* justify-content: center; */
   width: 250px;
   height: 250px;
-  /* text-align: center; */
-  order: 1;
-  /* left: 0; */
-  /* justify-content: space-between; */
-  /* flex-wrap: wrap; */
-  /* position: absolute; */
-  /* align-items: baseline; */
 }
 
 .astronomy {
   border: brown 3px solid;
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: baseline; */
   width: 250px;
   height: 250px;
-  /* text-align: center; */
-  margin-right: 10px;
-  /* justify-content: space-between; */
-  /* flex-wrap: wrap; */
-  /* position: relative; */
 }
 
 #footer {
