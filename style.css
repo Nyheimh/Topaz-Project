@@ -1,80 +1,146 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1523203806015-5e0eee90e49b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c3VubnklMjBkYXklMjBpbiUyMG1vdW50YWluc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  /* background-color: gray; */
+  background-blend-mode: luminosity;
+  color: rgba(0, 0, 0, 0.619);
+  /* text-align: center; */
+  /* background-position: center; */
+  border: 2px solid;
+  /* max-width: 100%; */
+  font-size: 1.5em;
+  }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
 .banner {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  justify-content: center;
   font-size: 30px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: aliceblue;
   border: aliceblue 2px solid;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #weather {
+  display: flex;
+  /* justify-content: center; */
+  width: 100%;
+  max-width: 300px;
   height: 40px;
   border-radius: 40px;
   padding: 10px;
   /* border: 3px solid #32e17c; */
-  position: absolute;
-  background: white;
-  max-width: 300px;
-  width: 100%;
+  /* position: absolute; */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
+  background: white;
+}
+
+.searchbar {
   display: flex;
-  padding: 10px;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
 }
 
 #search {
-  position: absolute;
+  /* position: absolute; */
+  display: flex;
   top: 50%;
   right: 20%;
-  display: flex;
   margin: 0px;
   padding: 0px;
-
-
-
-}
-body {
-background-image: url(https://images.unsplash.com/photo-1592210454359-9043f067919b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VhdGhlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-background-color: gray;
-background-blend-mode: luminosity;
-color: rgba(0, 0, 0, 0.619);
-text-align: center;
-background-position: center;
-border: 2px solid;
-max-width: 100%;
-font-size: 1.5em;
 }
 
 #box {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+}
 
-  /* justify-content: space-evenly;
-  flex-direction: column; */
-  /* border: lime 4px solid;
-  grid-template-columns: 4fr 4fr 4fr 4fr; */
-  /* width: 100%;
-  flex: 1; */
+.weatherDate {
+  display: flex;
+  justify-content: center;
+  color: white;
+  /* align-content: center; */
+}
+
+.box-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .current {
+  justify-content: center;
   border: gold 3px solid;
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
+  /* color: white; */
 }
 
 .astronomy {
+  text-align: center;
   border: brown 3px solid;
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
+  /* color: white; */
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(https://images.unsplash.com/photo-1587993202407-88b4156fe89f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60)
+  }
+  .current {
+    justify-content: center;
+    border: gold 3px solid;
+    width: 400px;
+    height:500px;
+    color: white;
+  }
+  
+  .astronomy {
+    text-align: center;
+    border: brown 3px solid;
+    width: 400px;
+    height: 500px;
+    color: white;
+  }
+  #footer {
+    position: fixed;
+    width: 100%;
+  }
+  }
+
 #footer {
+  display: flex;
   position: fixed;
+  text-align: center;
   left: 0;
   bottom: 0;
   width: 100%;
   color: white;
-  text-align: center;
 }

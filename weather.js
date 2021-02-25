@@ -13,6 +13,7 @@ const weather = async (value) => {
     // console.log(sun)
 
   try {
+    removeWeather()
       const response = await axios.get(url)
       // console.log(response)
       let data = response.data
@@ -31,7 +32,6 @@ const searchBtn = document.querySelector('#search')
 
 searchBtn.addEventListener('click', (e) => {
   e.preventDefault()
-  removeWeather()
 
   const searchBarValue = document.querySelector('#weather').value
 
@@ -65,33 +65,32 @@ function weatherList(data) {
 
   const weatherContainer = document.querySelector('.weather-info')
     // console.log(weatherContainer)
-// Add state to location in below div'
+// Add third day on line 82'
   console.log(data.forecast)
 const weatherInfo = `
   <div class ="weatherDate">
-    <p> Hello, the date is ${data.location.localtime}</p>
     <p> Location: ${data.location.name}, ${data.location.region} </p>
-
+  </div>
+  <div class="box-container">
+    <div class="current" id="box">  
+      <p> Current Temperature: ${data.current.temp_f} </p>
+      <p> Weather Condition: ${data.current.condition.text} </p>
     
-  <div class="current" id="box">  
-    <p> Current Temperature: ${data.current.temp_f} </p>
-    <p> Weather Condition: ${data.current.condition.text} </p>
-    
-    <li> Day 1 Forecast: ${data.forecast.forecastday[1].day.avgtemp_f} </li>
-    <li> Day 2 Forecast: ${data.forecast.forecastday[2].day.avgtemp_f}</li>
-    <li> Day 3 Forecast: ${data.forecast.forecastday[2].day.avgtemp_f}</li>
+      <li> Day 1 Forecast: ${data.forecast.forecastday[1].day.avgtemp_f} </li>
+      <li> Day 2 Forecast: ${data.forecast.forecastday[2].day.avgtemp_f}</li>
+      <li> Day 3 Forecast: ${data.forecast.forecastday[2].day.avgtemp_f}</li>
     </div>
 
-  <div class="astronomy" id="box">
-    <p> Sunset: ${data.forecast.forecastday[0].astro.sunset} </p>
-    <p> Sunrise: ${data.forecast.forecastday[0].astro.sunrise} </p>
-    <p> Moon Phase: ${data.forecast.forecastday[0].astro.moon_phase} </p>
-    <p> Moonrise: ${data.forecast.forecastday[0].astro.moonrise} </p>
-    <p> Moonset: ${data.forecast.forecastday[0].astro.moonset} </p>
+    <div class="astronomy" id="box">
+      <p> Sunset: ${data.forecast.forecastday[0].astro.sunset} </p>
+      <p> Sunrise: ${data.forecast.forecastday[0].astro.sunrise} </p>
+      <p> Moon Phase: ${data.forecast.forecastday[0].astro.moon_phase} </p>
+      <p> Moonrise: ${data.forecast.forecastday[0].astro.moonrise} </p>
+      <p> Moonset: ${data.forecast.forecastday[0].astro.moonset} </p>
     </div>
-    
+  </div>
 `
-weatherContainer.insertAdjacentHTML('beforebegin', weatherInfo)
+weatherContainer.insertAdjacentHTML('beforeend', weatherInfo)
 }
 
 
