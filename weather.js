@@ -4,7 +4,7 @@ let FORECAST = 'forecast.json'
 // let DAY = 'current.json'
 const API_KEY = '7d7cc083fad74e5193a213303212302'
 // let ASTRO_URL = `${DOMAIN}${ASTRO}?key=${API_KEY}&q=`;
-let FORECAST_URL = `${DOMAIN}${FORECAST}?key=${API_KEY}&q=`
+let FORECAST_URL = `${DOMAIN}${FORECAST}?key=${API_KEY}&days=3&q=`
 // let DAY_URL = `${DOMAIN}${DAY}?key=${API_KEY}&q=`;
 
 const weather = async (value) => {
@@ -65,22 +65,24 @@ function weatherList(data) {
 
   const weatherContainer = document.querySelector('.weather-info')
     // console.log(weatherContainer)
-// Add state to location in below div
+// Add state to location in below div'
+  console.log(data.forecast)
 const weatherInfo = `
   <div class ="weatherDate">
     <p> Hello, the date is ${data.location.localtime}</p>
     <p> Location: ${data.location.name}, ${data.location.region} </p>
 
-    <div class ="weatherCurrent" id="box">
+    <div class ="current" id="box">
     
     <p> Current Temperature: ${data.current.temp_f} </p>
     <p> Weather Condition: ${data.current.condition.text} </p>
-    <li> 1 Day Forecast: ${data.forecast.forecastday[0].day.maxtemp_f} </li>
-    <li> 2 Day Forecast: ${data.forecast.forecastday[1].day.maxtemp_f}</li>
+    
+    <li> Day 1 Forecast: ${data.forecast.forecastday[1].day.avgtemp_f} </li>
+    <li> Day 2 Forecast: ${data.forecast.forecastday[2].day.avgtemp_f}</li>
+    <li> Day 3 Forecast: ${data.forecast.forecastday[2].day.avgtemp_f}</li>
     </div>
 
   <div class ="astronomy" id="box">
-    <h1>Astronomy</h1>
     <p> Sunset: ${data.forecast.forecastday[0].astro.sunset} </p>
     <p> Sunrise: ${data.forecast.forecastday[0].astro.sunrise} </p>
     <p> Moon Phase: ${data.forecast.forecastday[0].astro.moon_phase} </p>
@@ -99,4 +101,4 @@ weatherContainer.insertAdjacentHTML('beforebegin', weatherInfo)
     while (weatherContainer.lastChild) {
       weatherContainer.removeChild(weatherContainer.lastChild)
     }
-  } 
+} 
