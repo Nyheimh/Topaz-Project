@@ -21,7 +21,7 @@ const weather = async (value) => {
       return response
     } catch (err) {
     console.error(err)
-    alert('Invalid city, please insert Zipcode or City, State')
+      alert('Please select a valid City.')
     }
 }
 // weather()
@@ -36,24 +36,20 @@ const searchBtn = document.querySelector('#search')
 
 function weatherList(data) {
   const weatherContainer = document.querySelector('.weather-info')
-// Add third day on line 82'
   const weatherInfo = `
   <div class ="weatherDate">
-    <p>${data.location.name}, ${data.location.region} </p>
-    <p> Weather Condition: ${data.current.condition.text}, ${data.current.temp_f} </p>
+    <p>${data.location.name}, ${data.location.region} </p> </div>
+  <div class="temp">
+    <p><br>${data.current.temp_f}° <br> ${data.current.condition.text} </p>
   </div>
   <div class="box-container">
     <div class="current" id="box">  
-      <p>  </p>
-      <p> Temperature: ${data.current.temp_f} </p>
-      
-    
-      <li> Day 1 Forecast: ${data.forecast.forecastday[0].day.avgtemp_f} </li>
-      <li> Day 2 Forecast: ${data.forecast.forecastday[1].day.avgtemp_f}</li>
-      <li> Day 3 Forecast: ${data.forecast.forecastday[2].day.avgtemp_f}</li>
+      <p> 3 Day Forecast </p>
+      <p> Day 1 Forecast: ${data.forecast.forecastday[0].day.avgtemp_f}° </p>
+      <p> Day 2 Forecast: ${data.forecast.forecastday[1].day.avgtemp_f}°</p>
+      <p> Day 3 Forecast: ${data.forecast.forecastday[2].day.avgtemp_f}°</p>
     </div>
     <div class="astronomy" id="box">
-      <p>Astronomy</p>
       <p> Sunset: ${data.forecast.forecastday[0].astro.sunset} </p>
       <p> Sunrise: ${data.forecast.forecastday[0].astro.sunrise} </p>
       <p> Moon Phase: ${data.forecast.forecastday[0].astro.moon_phase} </p>
@@ -62,8 +58,30 @@ function weatherList(data) {
     </div>
   </div>
 `
-weatherContainer.insertAdjacentHTML('beforeend', weatherInfo)
+  // weatherBackground()
+  weatherContainer.insertAdjacentHTML('beforeend', weatherInfo)
+  
+  console.log(weatherInfo)
 }
+
+
+
+// let weatherBackground = () => {
+//   if (weatherInfo === condition)
+//     if (condition === sunny || clear ) {
+//       document.body.background = "https://images.unsplash.com/photo-1465577512280-1c2d41a79862?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3Vubnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+//   }
+//     else if (condition === rain || light-rain || light-drizzle) {
+//       document.body.background = "https://images.unsplash.com/photo-1549882657-c5d2b3ecf5ee?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTF8fHJhaW55fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+//   }
+//     else if (condition === storm || storming) {
+//       document.body.background = "https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2VhdGhlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+//   }
+//     else (condition === cloudy || overcast)
+//       document.body.background = "https://images.unsplash.com/photo-1533281061131-fb923d5db140?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDd8fGNsb3VkeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+//   }
+
+  
   // remove previous data
   function removeWeather() {
     const weatherContainer = document.querySelector('.weather-info')
@@ -74,17 +92,3 @@ weatherContainer.insertAdjacentHTML('beforeend', weatherInfo)
 
 
 
-// let currentWeather = newWeather().getWeather()
-// if (document.body) {
-//   if (sunny) {
-//     document.body.background = "https://images.unsplash.com/photo-1465577512280-1c2d41a79862?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3Vubnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"      
-//   }
-//   else if (rainy) {
-//     document.body.background = "https://images.unsplash.com/photo-1549882657-c5d2b3ecf5ee?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTF8fHJhaW55fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-//   }
-//   else if (storm) {
-//     document.body.background = "https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2VhdGhlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-//   }
-//   else (cloudy)
-//     document.body.background = "https://images.unsplash.com/photo-1533281061131-fb923d5db140?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDd8fGNsb3VkeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-// }
