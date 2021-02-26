@@ -90,6 +90,7 @@ h1 {
 
 .current {
   justify-content: center;
+  text-align: center;
   /* border: gold 3px solid; */
   width: 400px;
   height: 400px;
@@ -101,12 +102,24 @@ h1 {
 
 .astronomy {
   justify-content: center;
+  text-align: center;
   /* text-align: center; */
   /* border: brown 3px solid; */
   width: 400px;
   height: 400px;
   background-color: black;
   opacity: 0.6;
+  color: white;
+}
+
+#footer {
+  /* display: flex; */
+  margin-top: 15px;
+  position: fixed;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   color: white;
 }
 
@@ -119,7 +132,7 @@ h1 {
     justify-content: center;
     border: white 3px solid;
     width: 400px;
-    height:500px;
+    height: 600px;
     color: black;
     background-color: gray;
     opacity: 0.6;
@@ -129,29 +142,18 @@ h1 {
     text-align: center;
     border:white 3px solid;
     width: 400px;
-    height: 500px;
+    height: 600px;
     color: black;
     background-color: gray;
     opacity: 0.6;
   }
   #footer {
-    position: fixed;
-    width: 100%;
-    border: chartreuse 5px solid;
+    margin-top: 25px;
+    position: absolute;
     text-align: center;
-    /* left: 0; */
-    /* bottom: 0; */
-    color: black;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
   }
-}
-
-#footer {
-  /* display: flex; */
-  margin-top: 15px;
-  position: fixed;
-  text-align: center;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
 }
