@@ -20,7 +20,8 @@ const weather = async (value) => {
       // console.log(data)
       return response
     } catch (err) {
-      console.error(err)
+    console.error(err)
+    alert('Invalid city, please insert Zipcode or City, State')
     }
 }
 // weather()
@@ -38,13 +39,14 @@ function weatherList(data) {
 // Add third day on line 82'
   const weatherInfo = `
   <div class ="weatherDate">
-    <p> Location: ${data.location.name}, ${data.location.region} </p>
+    <p>${data.location.name}, ${data.location.region} </p>
+    <p> Weather Condition: ${data.current.condition.text}, ${data.current.temp_f} </p>
   </div>
   <div class="box-container">
     <div class="current" id="box">  
-      <p> Current Condition </p>
+      <p>  </p>
       <p> Temperature: ${data.current.temp_f} </p>
-      <p> Weather Condition: ${data.current.condition.text} </p>
+      
     
       <li> Day 1 Forecast: ${data.forecast.forecastday[0].day.avgtemp_f} </li>
       <li> Day 2 Forecast: ${data.forecast.forecastday[1].day.avgtemp_f}</li>
@@ -69,3 +71,20 @@ weatherContainer.insertAdjacentHTML('beforeend', weatherInfo)
       weatherContainer.removeChild(weatherContainer.lastChild)
     }
 } 
+
+
+
+// let currentWeather = newWeather().getWeather()
+// if (document.body) {
+//   if (sunny) {
+//     document.body.background = "https://images.unsplash.com/photo-1465577512280-1c2d41a79862?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3Vubnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"      
+//   }
+//   else if (rainy) {
+//     document.body.background = "https://images.unsplash.com/photo-1549882657-c5d2b3ecf5ee?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTF8fHJhaW55fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+//   }
+//   else if (storm) {
+//     document.body.background = "https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2VhdGhlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+//   }
+//   else (cloudy)
+//     document.body.background = "https://images.unsplash.com/photo-1533281061131-fb923d5db140?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDd8fGNsb3VkeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+// }
