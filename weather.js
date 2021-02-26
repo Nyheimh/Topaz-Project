@@ -20,7 +20,7 @@ const weather = async (value) => {
       // console.log(data)
       return response
     } catch (err) {
-    console.error(err)
+      console.error(err)
       alert('Please select a valid City.')
     }
 }
@@ -58,26 +58,25 @@ function weatherList(data) {
     </div>
   </div>
 `
-  // weatherBackground()
-  weatherContainer.insertAdjacentHTML('beforeend', weatherInfo)
   
-  console.log(weatherInfo)
+  weatherContainer.insertAdjacentHTML('beforeend', weatherInfo)
+  // weatherBackground()
+  // console.log(weatherList)
 }
 
 
 
 // let weatherBackground = () => {
-//   if (weatherInfo === condition)
-//     if (condition === sunny || clear ) {
+//     if (weatherInfo.condition === 'Sunny' || 'Clear' ) {
 //       document.body.background = "https://images.unsplash.com/photo-1465577512280-1c2d41a79862?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3Vubnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
 //   }
-//     else if (condition === rain || light-rain || light-drizzle) {
-//       document.body.background = "https://images.unsplash.com/photo-1549882657-c5d2b3ecf5ee?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTF8fHJhaW55fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-//   }
-//     else if (condition === storm || storming) {
-//       document.body.background = "https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2VhdGhlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-//   }
-//     else (condition === cloudy || overcast)
+//   //   else if (condition === 'Rain' || 'Light rain' || 'Light drizzle') {
+//   //     document.body.background = "https://images.unsplash.com/photo-1549882657-c5d2b3ecf5ee?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTF8fHJhaW55fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+//   // }
+//   //   else if (condition === 'Storm' || 'Storming') {
+//   //     document.body.background = "https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2VhdGhlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+//   // }
+//     else (condition === 'Partly cloudy' || 'Cloudy' || 'Overcast')
 //       document.body.background = "https://images.unsplash.com/photo-1533281061131-fb923d5db140?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDd8fGNsb3VkeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
 //   }
 
