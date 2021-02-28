@@ -4,13 +4,9 @@ body {
   justify-content: center;
   background-image: url(https://images.unsplash.com/photo-1533668637662-07c3eb8407b9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1237&q=80);
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   background-size: cover;
-  /* background-color: gray; */
   background-blend-mode: luminosity;
   color: rgba(0, 0, 0, 0.619);
-  /* border: 2px solid; */
-  /* max-width: 100%; */
   font-size: 1.5em;
   }
 
@@ -25,7 +21,6 @@ body {
 .banner {
   display: flex;
   justify-content: center;
-  
 }
 
 h1 {
@@ -35,7 +30,6 @@ h1 {
   color: black;
   margin: 100px;
   text-shadow: 2px 2px 3px white;
-  /* border: aliceblue 2px solid; */
 }
 
 h1:hover{
@@ -54,10 +48,8 @@ h1:hover{
 
 #weather {
   display: flex;
-  /* justify-content: center; */
   width: 100%;
   max-width: 300px;
-  /* height: 40px; */
   border-radius: 40px;
   padding: 10px; 
   top: 50%;
@@ -80,7 +72,6 @@ h1:hover{
 }
 
 #search {
-  /* position: absolute; */
   display: flex;
   top: 50%;
   right: 20%;
@@ -92,7 +83,6 @@ h1:hover{
 
 #search:hover {
   transform:scale(1.5);
-
 }
 
 #box {
@@ -111,7 +101,6 @@ h1:hover{
   font-size: 50px;
   text-align: center;
   color: black;
-  /* margin: 100px; */
   text-shadow: 2px 2px 3px white;
 }
 
@@ -124,20 +113,16 @@ h1:hover{
 .current {
   justify-content: center;
   text-align: center;
-  /* border: gold 3px solid; */
   width: 400px;
   height: 500px;
   background-color: black;
   opacity: 0.6;
   color: white;
-  /* color: white; */
 }
 
 .astronomy {
   justify-content: center;
   text-align: center;
-  /* text-align: center; */
-  /* border: brown 3px solid; */
   width: 400px;
   height: 500px;
   background-color: black;
@@ -151,8 +136,8 @@ h1:hover{
 }
 
 #footer {
-  /* display: flex; */
   margin-top: 15px;
+  display: flex;
   position: fixed;
   text-align: center;
   left: 0;
@@ -206,6 +191,7 @@ h1:hover{
     background-color: gray;
     opacity: 0.6;
   }
+
   #footer {
     margin-top: 0 auto;
     bottom: 0;

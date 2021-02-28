@@ -1,30 +1,22 @@
 const domain = 'http://api.weatherapi.com/v1/';
 let forecast = 'forecast.json'
-// let ASTRO = 'astronomy.json'
-// let DAY = 'current.json'
 const api_key = '7d7cc083fad74e5193a213303212302'
-// let ASTRO_URL = `${DOMAIN}${ASTRO}?key=${API_KEY}&q=`;
 let forecast_url = `${domain}${forecast}?key=${api_key}&days=3&q=`
-// let DAY_URL = `${DOMAIN}${DAY}?key=${API_KEY}&q=`;
 
 const weather = async (value) => {
   const url = `${forecast_url}${value}`
-  // console.log(url)
-    // console.log(sun)
   try {
     removeWeather()
       const response = await axios.get(url)
-      // console.log(response)
       let data = response.data
         weatherList(data)
-      // console.log(data)
       return response
     } catch (err) {
       console.error(err)
       alert('Please select a valid City.')
     }
 }
-// weather()
+
 // event listener
 const searchBtn = document.querySelector('#search')
   searchBtn.addEventListener('click', (e) => {
@@ -58,28 +50,8 @@ function weatherList(data) {
     </div>
   </div>
 `
-  
   weatherContainer.insertAdjacentHTML('beforeend', weatherInfo)
-  // weatherBackground()
-  // console.log(weatherList)
 }
-
-
-
-// let weatherBackground = () => {
-//     if (weatherInfo.condition === 'Sunny' || 'Clear' ) {
-//       document.body.background = "https://images.unsplash.com/photo-1465577512280-1c2d41a79862?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3Vubnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-//   }
-//   //   else if (condition === 'Rain' || 'Light rain' || 'Light drizzle') {
-//   //     document.body.background = "https://images.unsplash.com/photo-1549882657-c5d2b3ecf5ee?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTF8fHJhaW55fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-//   // }
-//   //   else if (condition === 'Storm' || 'Storming') {
-//   //     document.body.background = "https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2VhdGhlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-//   // }
-//     else (condition === 'Partly cloudy' || 'Cloudy' || 'Overcast')
-//       document.body.background = "https://images.unsplash.com/photo-1533281061131-fb923d5db140?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDd8fGNsb3VkeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-//   }
-
   
   // remove previous data
   function removeWeather() {
