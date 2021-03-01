@@ -108,26 +108,39 @@ https://wireframe.cc/pro/pp/d98c9f9f1417159
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: 	|
-| Pseudocode | H | 2 hrs | 0hr | 0hr |
-| HTML | H | 3 hrs | 0hr | 0hr |
-| Initial API call | H | 3 hrs| 0hr| 0hr|
-| Render API to page | H | 4 hrs | 0hr | 0hr |
-| Search button | M | 4 hrs | 0hrs | 0hrs |
-| Input section | M | 3.5 hrs | 0hrs | 0hrs |
-| Initial CSS | M | 4 hrs | 0hrs | 0hrs |
-| Complete MVP/Testing | H | 4 hrs | 0hr | 0hr |
-| Try Handling | H | 4hrs | 0hr | 0hr |
-| Refine CSS/Responsive Design | M | 4 hrs | 0hrs | 0hrs |
-| Total | H | 35.5hrs| 0hr | 0hr |
+| Pseudocode | H | 2hrs | 1hr 30m | 1hr 30m |
+| HTML | H | 3 hrs | 2hr 30m | 2hr 30m |
+| Initial API call | H | 3 hrs| 4hrs| 4hrs|
+| Render API to page | H | 4 hrs | 2hr 30m | 2hr 30m |
+| Search button | M | 4 hrs | 4hrs | 4hrs |
+| Input section | M | 3.5 hrs | 3hrs | 3hrs |
+| Initial CSS | M | 4 hrs | 5hrs | 5hrs |
+| Complete MVP/Testing | H | 4hrs | 4hrs | 4hrs |
+| Try Handling | H | 4hrs | 3hrs | 3hrs |
+| Refine CSS/Responsive Design | M | 4hrs | 3hrs | 3hrs |
+| Total | H | 35.5hrs| 29.5hr | 29.5hr |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+.current {
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: 500px;
+  background-color: black;
+  opacity: 0.6;
+  color: white;
+}
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
+.astronomy {
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: 500px;
+  background-color: black;
+  opacity: 0.6;
+  color: white;
 }
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+
