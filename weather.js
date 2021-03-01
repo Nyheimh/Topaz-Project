@@ -1,4 +1,4 @@
-const domain = 'http://api.weatherapi.com/v1/';
+const domain = 'https://api.weatherapi.com/v1/';
 let forecast = 'forecast.json'
 const api_key = '7d7cc083fad74e5193a213303212302'
 let forecast_url = `${domain}${forecast}?key=${api_key}&days=3&q=`
