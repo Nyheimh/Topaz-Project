@@ -42,8 +42,8 @@ function weatherList(data) {
       <p> Day 3 Forecast: ${data.forecast.forecastday[2].day.avgtemp_f}°</p>
     </div>
     <div class="astronomy" id="box">
-      <p> Sunset: ${data.forecast.forecastday[0].astro.sunset} </p>
       <p> Sunrise: ${data.forecast.forecastday[0].astro.sunrise} </p>
+      <p> Sunset: ${data.forecast.forecastday[0].astro.sunset} </p>
       <p> Moon Phase: ${data.forecast.forecastday[0].astro.moon_phase} </p>
       <p> Moonrise: ${data.forecast.forecastday[0].astro.moonrise} </p>
       <p> Moonset: ${data.forecast.forecastday[0].astro.moonset} </p>
