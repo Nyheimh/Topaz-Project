@@ -144,3 +144,4 @@ https://wireframe.cc/pro/pp/d98c9f9f1417159
 
 ## Change Log
 
+This CSS code is the code I am most proud of because I had so many diffculties attempting to line up my boxes next to one another. Once I completed, I was able to make the styling on them look so much better!
