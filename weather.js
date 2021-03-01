@@ -17,7 +17,6 @@ const weather = async (value) => {
     }
 }
 
-// event listener
 const searchBtn = document.querySelector('#search')
   searchBtn.addEventListener('click', (e) => {
   e.preventDefault()
@@ -45,8 +44,8 @@ function weatherList(data) {
       <p> Sunrise: ${data.forecast.forecastday[0].astro.sunrise} </p>
       <p> Sunset: ${data.forecast.forecastday[0].astro.sunset} </p>
       <p> Moon Phase: ${data.forecast.forecastday[0].astro.moon_phase} </p>
-      <p> Moonrise: ${data.forecast.forecastday[0].astro.moonrise} </p>
       <p> Moonset: ${data.forecast.forecastday[0].astro.moonset} </p>
+      <p> Moonrise: ${data.forecast.forecastday[0].astro.moonrise} </p>
     </div>
   </div>
 `
